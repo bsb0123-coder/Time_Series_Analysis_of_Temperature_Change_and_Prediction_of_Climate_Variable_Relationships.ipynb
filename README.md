@@ -24,8 +24,7 @@
 1. 컬럼명 한글 → 영어로 변환  
 2. `Date_raw`를 `YYYY-MM` 형태의 월 단위 날짜로 변환  
 3. 분석 지역 5곳만 필터링  
-4. **창원(2000.01~2015.08)의 일사량 결측치를  
-   같은 기간의 다른 4개 지역 평균값으로 보정**
+4. **창원(2000.01~2015.08)의 일사량 결측치를 같은 기간의 다른 4개 지역 평균값으로 보정**
 5. 남은 결측치는 station+month 평균값으로 추가 보정  
 6. 최종 전처리 결과 저장 → `전처리 이후.csv`
 
@@ -38,8 +37,7 @@
 - 각 지역의 계절성·기후 특성 파악  
 
 ### 2) 상관관계 분석 (Heatmap)
-- 4개 기후 변수(temperature, humidity, precipitation, sunshine)의  
-  상관계수 행렬을 지역별로 시각화  
+- 4개 기후 변수(temperature, humidity, precipitation, sunshine)의 상관계수 행렬을 지역별로 시각화  
 - 지역별 변수 간 관계 차이 파악  
 
 ### 3) 회귀 분석 (기온 → 습도)
@@ -55,12 +53,12 @@
 ## ● 실행 방법
 
 ### 1) Colab 환경 연결
-from google.colab import drive
-drive.mount('/content/drive')
+ 구글 코랩과 구글 드라이브 연결
+ 구글 드라이브에 `전처리 이전.csv`를 저장
 
 ### 2) 전처리 코드 실행
 `전처리 이전.csv`를 불러와 전처리 수행  
-→ 결과물 `전처리 이후.csv` 생성
+→ 결과물 `전처리 이후.csv` 생성 (경로: "/content/drive/MyDrive/전처리 이전.csv")
 
 ### 3) 분석 코드 실행
 - 시계열 그래프
@@ -79,16 +77,6 @@ drive.mount('/content/drive')
 - **강수량은 제주가 가장 크고 변동성도 가장 큼**  
 - **상관관계 분석에서 지역 특성이 뚜렷하게 드러남**  
 
----
-
-## ● 폴더 구조
-project/
-│
-├── 전처리 이전.csv
-├── 전처리 이후.csv
-├── analysis.ipynb
-├── README.md
-└── requirements.txt
 
 ---
 
