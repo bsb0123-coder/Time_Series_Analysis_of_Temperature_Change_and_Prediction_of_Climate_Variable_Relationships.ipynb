@@ -1,4 +1,4 @@
-# ● Time Series Analysis of Temperature Change and Prediction of Climate Variable Relationships  
+# ● 시계열 기온 변화 분석 및 기후 변수 상관관계 예측 
 **기간: 2000.01 ~ 2025.10**  
 **지역: 서울, 강릉, 대구, 창원, 제주**  
 **분석 변수: 평균기온, 평균상대습도, 월합강수량, 일사량**
