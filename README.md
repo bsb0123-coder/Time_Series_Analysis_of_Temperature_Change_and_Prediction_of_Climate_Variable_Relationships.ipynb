@@ -1,4 +1,4 @@
-# ● 한국 기후 데이터 시계열 분석 및 기후변수 상관관계 분석과 회귀  
+# ● Time Series Analysis of Temperature Change and Prediction of Climate Variable Relationships  
 **기간: 2000.01 ~ 2025.10**  
 **지역: 서울, 강릉, 대구, 창원, 제주**  
 **분석 변수: 평균기온, 평균상대습도, 월합강수량, 일사량**
